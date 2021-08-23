@@ -24,7 +24,7 @@ header .container {
 }
 
 header .logo {
-    margin-left: 10px;
+    margin-left: 0px;
     color: var(--orange);
     font-family: 'Arial Black', Times;
     font-size: 40px;
@@ -48,10 +48,11 @@ header nav a:hover {
 
 .main-movie {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('../img/cover-momentum.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('../img/cover-momentum2.jpg');
 
-    height: 400px;
-    background-size: cover;
+    height: 500px;
+    background-size:cover;
+    background-position: center left;
     background-repeat: no-repeat;
 
     display: flex;
@@ -91,4 +92,12 @@ header nav a:hover {
 .button i {
     margin-right: 10px;
     font-size: 20px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+.main-movie .container {
+    width: 70%;
 }
