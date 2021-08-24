@@ -33,8 +33,8 @@
                 <h3 class='movie-title'>Momentum</h3>
                 <p class='description'>Taylor Steele's 1991 breakout VHS release changed the way surf movies were made for the next decade and became the namesake for The Momentum Generation of surfers. Listed as #3 on Surfing Magazine's "Greatest Surf Movies of All Time."</p>
                 <div class='buttons'> 
-                    <button class='button' role='button'> <i class="far fa-play-circle"></i> STREAM NOW</button>
-                    <button class='button' role='button'> <i class="fas fa-binoculars"></i> MORE INFO</button>
+                    <button class='button' id="streamBtn" role='button'> <i class="far fa-play-circle"></i> WATCH TRAILER</button>
+                    <button class='button' id="infoBtn" role='button'> <i class="fas fa-binoculars"></i> MORE INFO</button>
                 </div>
             </div>
         </div>
@@ -83,12 +83,29 @@
             </div>
         </div>
     </div>
-    <footer><p>Copyright Berna 2021</p></footer>
+    <div class="modal-bg" id="infoModalBg">
+        <div class="modal">
+            <h2>Momentum (1992)</h2>
+            <h3>Overview</h3>
+            <p>MOMENTUM marks the beginning of a new era in surfing. Featuring some of the first sections of New School surfers Kelly Slater, Rob Machado, Shane Dorian, Ross Williams, Benji Weatherly, Kalani Robb and more, Taylor Steele's 1991 breakout VHS release changed the way surf movies were made for the next decade and became the namesake for The Momentum Generation of surfers. In 2007, Momentum was listed as #3 on Surfing Magazine's "Greatest Surf Movies of All Time."</p>
+            <h4>Director: Taylor Steele</h4>
+            <span class='modal-close' id='closeInfoBtn'>X</span>
+        </div>
+    </div>
+    <div class="modal-bg" id="streamModalBg">
+        <div class="modal">
+            <span class='modal-close' id='closeStreamBtn'>X</span>
+            <iframe width="95%" height="420" src="https://www.youtube.com/embed/6L4YJu_FnLY?controls=0" title="Momentum Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+        </div>
+    </div>
+    <footer><p>Copyright BernasurfPix 2021</p></footer>
 
     <script src="https://kit.fontawesome.com/4b851936b4.js" crossorigin="anonymous"></script>
     <script src="./js/owl/jquery.min.js"></script>
     <script src="./js/owl/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
     
 </body>
 </html>
